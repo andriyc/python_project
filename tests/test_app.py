@@ -1,5 +1,5 @@
 import unittest
-from app import app
+from /home/travis/build/andriyc/python_project/app.py import app
 
 
 def test_app():
