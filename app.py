@@ -1,10 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return Flask.render_template("index.html", message='CI/CD to DEV is working well !!! Powered by Jenkins!!!')
+    return render_template("index.html", message='CI/CD to DEV is working well !!! Powered by Jenkins!!!')
 
 
 if __name__ == '__main__':
