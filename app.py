@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'CD to DEV is working well !!!'
+    return 'CI/CD to DEV is working well !!! Powered by Jenkins.'
 
 
 if __name__ == '__main__':
