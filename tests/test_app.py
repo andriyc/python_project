@@ -1,6 +1,6 @@
 import unittest
 
-from .context import app
+from context import app
 
 
 def test_app():
