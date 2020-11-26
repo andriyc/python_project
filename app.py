@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template
 
-DEBUG_MODE = True;
+DEBUG_MODE = False;
 
 app = Flask(__name__)
 
