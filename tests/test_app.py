@@ -1,11 +1,12 @@
 import unittest
-
-from context import app
+from app import project_properties
 
 
 class AppTests(unittest.TestCase):
-    def test_app(self):
-        assert True  # app.index() == 'CI/CD to DEV is working well !!! Powered by Jenkins!!!'
+    @staticmethod
+    def test_if_debug_mode():
+        assert not project_properties.is_true('APP', 'DEBUG_MODE'), 'Deploy in debug mode is permitted!!!'
 
-    def test_if_debug_mode(self):
-        assert not app.DEBUG_MODE, 'Deploy in debug mode is permitted!!!'
+
+if __name__ == '__main__':
+    unittest.main()
