@@ -7,7 +7,6 @@ class ProjectSettings:
     project_properties: ConfigParser
 
     def __init__(self, file: str):
-        print('init: ' + sys.path[0])
         self.project_properties = ConfigParser()
         self.project_properties.read(file)
 
