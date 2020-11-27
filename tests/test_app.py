@@ -1,8 +1,8 @@
 import os
 import sys
 import unittest
-from tests import context
-import app
+import tests.tests_context
+
 from app import project_properties
 
 
