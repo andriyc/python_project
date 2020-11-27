@@ -1,7 +1,9 @@
 import sys
 import unittest
 from tests import context
+import app
 from app import project_properties
+
 
 class AppTests(unittest.TestCase):
     @staticmethod
